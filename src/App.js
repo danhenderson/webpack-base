@@ -2,7 +2,5 @@ import React from 'react';
 import { cxs } from 'react-cxs'
 
 export default props => (
-  <div>
-    Hello!!!
-  </div>
-)
+  <h1>Webpack Base Example</h1>
+);

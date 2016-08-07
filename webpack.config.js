@@ -36,7 +36,6 @@ module.exports = {
     }]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.ProvidePlugin({ reactCxs: 'react-cxs' })
+    new webpack.HotModuleReplacementPlugin()
   ]
 };
