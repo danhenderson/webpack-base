@@ -30,12 +30,19 @@ module.exports = {
       loader: 'babel',
       query: {
         "presets": ["es2015", "stage-0", "react"],
-        "plugins": ["react-hot-loader/babel"]
+        "plugins": [
+          "react-hot-loader/babel",
+          [
+            "transform-react-jsx",
+            { "pragma": "reactCxs" }
+          ]
+        ]
       },
       include: path.join(__dirname, 'src')
     }]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.ProvidePlugin({ reactCxs: 'react-cxs' })
   ]
 };
