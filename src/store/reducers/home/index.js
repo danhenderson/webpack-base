@@ -1,4 +1,4 @@
-import { createReducer } from '../../../utils/reducers';
+import { createReducer } from 'utils/reducers';
 
 let defaultState = {
   title: 'Example Title'

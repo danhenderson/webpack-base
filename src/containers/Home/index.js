@@ -1,8 +1,8 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import * as homeActions from '../../store/actions/home';
-import Button from '../../components/Button';
+import * as homeActions from 'store/actions/home';
+import Button from 'components/Button';
 
 const Home = ({ title, updateTitle }) => (
   <div>

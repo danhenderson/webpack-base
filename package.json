@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --progress",
+    "start": "NODE_PATH=$NODE_PATH:./src && webpack-dev-server --progress",
     "test:unit": "mocha --compilers js:babel-core/register src/**/__tests__/*-test.js",
     "test:lint": "eslint src/**/*.js",
     "test": "npm run test:lint && npm run test:unit"

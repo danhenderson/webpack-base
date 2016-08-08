@@ -1,9 +1,11 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
-import Home from '../containers/Home';
+import Home from 'containers/Home';
+import NotFound from 'containers/NotFound';
 
 export default (
-  <Route component={ Home } path="/">
-
+  <Route path="/">
+    <IndexRoute component={ Home } />
+    <Route path='*' component={ NotFound } />
   </Route>
 )
