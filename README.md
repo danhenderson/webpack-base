@@ -4,5 +4,5 @@ Just a very basic webpack setup to fork from
 
 # TODO
 
-- document
-- linting
+- document readme
+- add src to NODE_PATH
