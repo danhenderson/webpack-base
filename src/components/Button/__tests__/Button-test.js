@@ -1,15 +1,16 @@
-import App from '../App';
+import Button from '../';
 
-describe('App', function() {
+describe('Button', function() {
   let component;
 
   beforeEach(function() {
-    component = shallowRender(<App />);
+    component = shallowRender(<Button>Click Me</Button>);
   });
 
-  it('should render the App header', function() {
-    expect(component.props.children).to.contain('Webpack Base Example');
-    expect(component.type).to.equal('h1');
+  it('should render the Button', function() {
+    expect(component.props.children).to.equal('Click Me');
+    expect(component.type).to.equal('button');
+    expect(component.props.className).to.contain('btn');
   });
 });
 
