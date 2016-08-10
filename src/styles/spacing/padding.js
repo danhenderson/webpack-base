@@ -13,7 +13,7 @@ let padding = {
   padY: {}
 };
 
-spaces.forEach(space => {
+spaces.map(space => {
   padding.pad[space.name] = {
     padding: `${spacing.rhythm * space.factor}em`
   }

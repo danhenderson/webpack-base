@@ -5,4 +5,4 @@ Just a very basic webpack setup to fork from
 # TODO
 
 - document readme
-- css
+- css (body.class h1 too specific)
