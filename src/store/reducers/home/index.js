@@ -6,12 +6,9 @@ let defaultState = {
 
 export default createReducer(defaultState, {
 
-  'UPDATE_TITLE': (state, payload) => {
-    console.log('UPDATE_TITLE');
-    return {
-      ...state,
-      title: payload.title
-    }
-  }
+  'UPDATE_TITLE': (state, payload) => ({
+    ...state,
+    title: payload.title
+  })
 
 });
