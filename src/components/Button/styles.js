@@ -6,15 +6,15 @@ console.log(padding);
 export default {
   ...padding.padY.half,
   ...padding.padX.single,
-  backgroundColor: colors.primaryColor,
+  backgroundColor: colors.primary,
   outline: 'none',
   border: '1px solid rgba(0, 0, 0, 0.5)',
   borderRadius: '20px',
-  color: '#fff',
+  color: colors.light,
   cursor: 'pointer',
   MozAppearance: 'none',
   WebkitAppearance: 'none',
   ':hover': {
-    backgroundColor: '#06b'
+    backgroundColor: colors.dark
   }
 }
