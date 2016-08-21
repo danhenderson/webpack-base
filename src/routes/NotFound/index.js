@@ -1,12 +1,11 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import Page from 'containers/Page';
-import * as homeActions from 'store/actions/home';
-import Button from 'components/Button';
+import { Page } from 'containers';
+import { Heading } from 'components';
 
 export default () => (
   <Page>
-    <h1>Not Found</h1>
+    <Heading level={1}>Not Found</Heading>
   </Page>
 );

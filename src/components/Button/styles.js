@@ -1,8 +1,6 @@
 import { colors } from 'styles/variables';
 import { padding } from 'styles/spacing';
 
-console.log(padding);
-
 export default {
   ...padding.padY.half,
   ...padding.padX.single,

@@ -1,6 +1,5 @@
 import React from 'react';
-import Header from 'containers/Header';
-import Footer from 'containers/Footer';
+import { Footer, Header } from 'containers';
 import styles from './styles';
 
 export default ({ children }) => (

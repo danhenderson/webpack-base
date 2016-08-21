@@ -1,16 +1,14 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import Page from 'containers/Page';
 import * as homeActions from 'store/actions/home';
-import Button from 'components/Button';
+import { Page } from 'containers';
+import { Button, Heading } from 'components';
 
 const Home = ({ title, updateTitle }) => (
   <Page>
-    <h2>{ title }</h2>
-    <Button
-      onClick={ e => updateTitle('New Title') }
-    >
+    <Heading level={1}>{ title }</Heading>
+    <Button onClick={ e => updateTitle('New Title') }>
       Click Me
     </Button>
   </Page>
